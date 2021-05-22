@@ -20,7 +20,7 @@ const Login = () => {
     axios.post('http://localhost:5000/api/login', formData)
       .then((res) => {
         localStorage.setItem('token', res.data.payload)
-        history.push
+        history.push('/colors')
       })
       .catch((er) => {
         setFormData({ ...formData, error:"Username or Password invalid."})
