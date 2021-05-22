@@ -7,7 +7,7 @@ const Login = () => {
   // make a post request to retrieve a token from the api
   // when you have handled the token, navigate to the BubblePage route
 
-  const [formData, setFormData] = useState({ username:"", password:"", error:"" });
+  const [formData, setFormData] = useState({ username:"Lambda", password:"i<3Lambd4", error:"" });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
